@@ -5,8 +5,8 @@ This is a project using the latest architecture components to search music using
 It's based in a [Activity - Fragment] architecture, also on a RecyclerView and Adapter view based on the data that has to be shown.
 
 ## ViewModel
--Songs ViewModel handling the most business logic and obtain the songs using songsRepo injected in it
--Also manages the network state
+- Songs ViewModel handling the most business logic and obtain the songs using songsRepo injected in it
+- Also manages the network state
 
 ## Repository
 The repo has the ApiService and the Room Service. 
