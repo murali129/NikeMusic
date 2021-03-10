@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nike music</string>
+    <string name="retry">Retry</string>
+    <string name="error_msg">Error getting data</string>
+    <string name="viewtype_creation_error">ViewType not declared</string>
+    <string name="app_label">MusicApp</string>
+    <string name="search_hint">Type track name for songs</string>
+    <string name="search">Search</string>
+    <string name="load_data">Load data</string>
+    <string name="songs_empty">No Songs found, try to find different track</string>
+    <string name="listeners">Listeners:</string>
+    <string name="webview_activity_title">Song details</string>
+</resources>
