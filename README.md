@@ -28,10 +28,9 @@ We have 4 major modules:
 - The DAO is tested as well.
 
 ## Main libraries used
-- [Kotlin](https://kotlinlang.org/docs/reference/) :heart:
+- [Kotlin](https://kotlinlang.org/docs/reference/)
 - [Koin](https://github.com/InsertKoinIO/koin) (DI)
 - [MVVM](https://developer.android.com/jetpack/docs/guide) (Architecture)
-- [Paging Library](https://developer.android.com/topic/libraries/architecture/paging) (Paging)
 - [Room](https://developer.android.com/topic/libraries/architecture/room) (Persistence)
 - [Retrofit](https://square.github.io/retrofit/) (Network)
 - [Coroutines](https://developer.android.com/kotlin/coroutines)
