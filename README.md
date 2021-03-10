@@ -1,26 +1,19 @@
-# RecipesBook
-This is a project using the latest architecture components and the Paging Library to retrieve some data from this [public api](http://www.recipepuppy.com/).
+# NikeMusic
+This is a project using the latest architecture components to search music using last fm track.search api
 
 ## View
 It's based in a [Activity - Fragment] architecture, also on a RecyclerView and Adapter view based on the data that has to be shown.
-The Recipes Adapter implements PagedListAdapter to be able to handle the pagination.
 
 ## ViewModel
-Recipe ViewModel handling the Repo and the DataSource to be able to obtain the data paginated.
-Favourites ViewModel handles only the repo, because the data is not being obtained in pagination, only from Persistence(Room)
-
-## Model
-The model is the one who is managing the repo and where the data is coming from. In the case of the Recipe search flow, the data is coming
-from the Network in a pagination mode. 
-The RecipeDataSource is the heart of the Pagination. The one listening for query changes and making query request to the repo api.
-Also listening for the pagination when scrolling the RecyclerView to get more data and managing the NetwrokState for UI purposes (RUNNING,SUCCESS,FAILED).
+-Songs ViewModel handling the most business logic and obtain the songs using songsRepo injected in it
+-Also manages the network state
 
 ## Repository
 The repo has the ApiService and the Room Service. 
 - We get the search data from the ApiService.
-- We save data to the Room Service.
-- We delete the data to the Room Service.
-- We get the saved data from the Room Service.
+- We can save data to the Room Service
+- We can delete the data to the Room Service.
+- We can get the saved data from the Room Service.
 
 ## Dependency Injection
 We use Koin for the dependency injection, it's a very simple library for DI for Kotlin. Very easy to understand and to use.
@@ -44,10 +37,8 @@ We have 4 major modules:
 - [Coroutines](https://developer.android.com/kotlin/coroutines)
 
 ## TODO
+- Did not use the Room persistent layer in this project to persist the data, but we can use it to cache songs to be loaded in offline mode
 - Instrumented Test
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
